@@ -99,6 +99,8 @@ execution:
     secrets:
         - variable: NVIDIA_API_KEY
           description: NVIDIA API Key for Cloud Inference (starts with "nvapi-")
+        - variable: HUGGING_FACE_HUB_TOKEN
+          description: ""
     mounts:
         - type: project
           target: /project/

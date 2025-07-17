@@ -147,7 +147,7 @@ def cloud_to_config(cloud: str) -> str:
     elif cloud == "Jamba-1.5 Large Instruct": 
         return "ai21labs/jamba-1.5-large-instruct"
     else:
-        return "mistralai/mistral-7b-instruct-v0.2"
+        return "mistralai/mistral-7b-instruct-v0.3"
 
 def quant_to_config(quant: str) -> str:
     """

@@ -340,6 +340,7 @@ def build_page(client: chat_client.ChatClient) -> gr.Blocks:
             elif len(models) == 1 and models[0] == "Gated Models":
                 choices = ["mistralai/Mistral-7B-Instruct-v0.1",
                            "mistralai/Mistral-7B-Instruct-v0.2",
+                           "mistralai/Mistral-7B-Instruct-v0.3",
                            "meta-llama/Llama-2-7b-chat-hf",
                            "meta-llama/Meta-Llama-3-8B-Instruct"]
                 selected = "mistralai/Mistral-7B-Instruct-v0.1"
@@ -348,6 +349,7 @@ def build_page(client: chat_client.ChatClient) -> gr.Blocks:
                            "microsoft/Phi-3-mini-128k-instruct",
                            "mistralai/Mistral-7B-Instruct-v0.1",
                            "mistralai/Mistral-7B-Instruct-v0.2",
+                           "mistralai/Mistral-7B-Instruct-v0.3",
                            "meta-llama/Llama-2-7b-chat-hf",
                            "meta-llama/Meta-Llama-3-8B-Instruct"]
                 selected = "nvidia/Llama3-ChatQA-1.5-8B"
@@ -502,7 +504,7 @@ def build_page(client: chat_client.ChatClient) -> gr.Blocks:
                            "Mixtral 8x22B Instruct v0.1",
                            "Mistral-NeMo 12B Instruct",
                            "Mamba Codestral 7B v0.1"]
-                value = "Mistral 7B Instruct v0.2"
+                value = "Mistral 7B Instruct v0.3"
                 visible = True
             elif family == "Meta":
                 choices = ["Llama 3 8B", 
